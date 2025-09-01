@@ -1,0 +1,43 @@
+:root {
+    --grey:#454449;
+    --black: #32352a;
+    --sizeRation: 20px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; 
+    margin: 40px;
+    place-items: center;
+}
+
+.text, .glass, .rainbow, .button{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: "Pixelify Sans", sans-serif;
+    color:rgb(255, 255, 255);
+    background-color: var(--grey);
+    font-size: var(--sizeRation);
+    height: calc(var(--sizeRation) * 2.5); 
+    width: calc(var(--sizeRation) * 8);
+    border-radius: calc(var(--sizeRation) * 2.5);
+    box-shadow: 0 4px 10px rgb(0,0,0./ .1)
+}
+
+.button{
+    ba
+}
+
+.glass {
+    color:bisque
+}
+
+
+
