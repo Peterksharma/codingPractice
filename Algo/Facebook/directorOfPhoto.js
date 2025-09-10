@@ -1,7 +1,7 @@
-// find the first B or P
-// find the the next A
-// find the inverse of what was found in B or P
-// Make sure that its in the contrains of x and y
+//iterate through the string
+//find the first P or B
+//iterate through into the inverse of above is found (if p is found looking for a B, vise verse)
+//Count the space between
 
 
 /**
@@ -18,16 +18,20 @@ function getArtisticPhotographCount(N, C, X, Y) {
     X = 1       //Valid Min Distance
     Y = 2       //Valid Max Distance
 
-    let counter = 0
-
+    let possiblePhoto = 0
+    let counter1 = 0
     let filledCells = C.split('')
-    console.log(filledCells)
-
-    
 
 
+    for (let i = 0; i < filledCells.length; i++) {
+        if (filledCells[i] == "P" || filledCells[i] == "B") {
+            counter1++
+            console.log('counter at:', counter1, 'from position:', i)
+        }
+    }
 
-  return counter;
+
+  return possiblePhoto;
 }
 
 getArtisticPhotographCount()
