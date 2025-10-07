@@ -4,11 +4,18 @@
  * @return {number}
  */
 var divide = function(dividend, divisor) {
-    dividend = 7
-    divisor = -3
-    
-    let flipdividend = false
-    let flipdivisor = false
+  
+  
+  if (divisor == 0) { 
+    return undefined
+  } else if (divisor == 1) {
+    return dividend
+  } else if (divisor == -1 &&  dividend < 0) {
+    return -dividend
+  }
+  
+  let flipdividend = false
+  let flipdivisor = false
     
   if (dividend < 0) { 
     dividend = Math.abs(dividend)
@@ -28,9 +35,10 @@ var divide = function(dividend, divisor) {
   if ((flipdividend == true && flipdivisor == false) || (flipdividend == false && flipdivisor == true)) { 
     counter = -counter
   }
-    
-  console.log(counter)
+  
+  
+  return counter
     
 };
 
-divide()
+divide(1,-1)
