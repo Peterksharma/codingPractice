@@ -1,0 +1,28 @@
+
+#cardOuterContainer {
+	background: gray;	
+	width: 800px;
+	height: 150px;
+	margin: auto;
+	padding: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.card{
+	background: lightgray;
+	border: 2px solid red;
+	border-radius: 10px;
+	height: 100px;
+	width: 150px;
+	text-align: center
+}
+
+p {
+	font-size: 12px
+}
+
+h2 {
+	font-size: 18px
+}

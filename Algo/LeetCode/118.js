@@ -1,34 +1,29 @@
-// on row one push the value
-// one row push the value
-// on row three we can take the row before and add it
+//Make the shape
+//If its 1 row return the value
+//if its 2 rows custom return
 //
+//if its more than three rows we need to go to the answer.[i]
+//take the current 
 
 /**
  * @param {number} numRows
  * @return {number[][]}
  */
 var generate = function (numRows) {
-  numRows = 5;
-  let answer = [];
-  let answer2 = [];
-  // Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
-  let c
-  
-  for (let i = 0; i < numRows; i++) {
-    if (i == 0) {
-      answer2.push([1]);
-    } else if (i == 1) {
-      answer2.push([1, 1]);
-    } else if (i > 1) {
-      let counter = 0
-      for (let j = i; j < answer2[i].length; j++) { 
-        console.log()
-      }
-    }
-  }
-  console.log(answer2);
 
-  return answer;
+  let answer = [];
+ 
+  if(numRows == 1 ) {
+    answer.push([1])
+  } else if (numRows == 2) {
+    answer.push([1],[1,1])
+  }
+
+  for(let row = 0 ; row < numRows; row++){
+      answer.push([1])
+  }
+
+  console.log(answer)
 };
 
-generate();
+generate(5)
